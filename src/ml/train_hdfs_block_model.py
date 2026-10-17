@@ -1,5 +1,8 @@
 """PHASE 3a - Supervised + unsupervised ML on the labeled HDFS_v1 blocks.
 
+docker exec -it cloudlog-app python -m src.ml.train_hdfs_block_model
+Its purpose is to train and evaluate machine learning models that identify anomalous HDFS blocks using the data prepared
+ 
 Task: given the event-count vector of one HDFS block, is the block Normal or Anomalous?
 Models compared:  Logistic Regression (baseline) | Isolation Forest (unsupervised) | XGBoost (main)
 """
